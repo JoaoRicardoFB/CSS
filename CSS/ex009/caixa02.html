@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style> /* Essa parte de caixas é importante para a semantica na hora de montar um site, saber identificar o que é cada coisa, além de ajudar na parte CSS de desing, ajuda a entender onde estão as informações a serem colocadas no seu site! */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav {
+            background-color: rgb(102, 102, 102);
+            padding: 3px;
+            box-shadow: 1px 1px 1px 1px black;
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 20px;
+            
+        }
+        nav > a:hover {
+            text-decoration: underline;
+
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+        article > aside {
+            background-color: rgb(165, 165, 165)
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+        footer > p {
+            margin: 0%;
+        }
+    </style>
+</head>
+<body>
+    <header> <!-- header = cabeçalho -->
+        <h1>Meu site</h1>
+        <nav> <!-- nav = menu -->
+            <a href="#">Link</a> 
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main> <!-- main = conteúdo principal -->
+        <section id="assuntos"> <!-- section = sessão -->
+            <p>Esportes Política Tecnologia</p>
+        </section>
+         <section id="noticias">
+            <article> <!-- article = artigo -->
+                <aside> <!-- aside = como se fosse um conteúdo periférico ao artigo -->
+                    <h2>Notícia sobre o Brasil</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur saepe, eaque consequuntur ratione tenetur nam fugiat vitae expedita cupiditate id ipsam dolores non nobis, voluptatibus voluptas repellat! Rem, quod libero.</p>
+                </aside>
+            </article>
+            <article>
+                <p>Artigo escrito por João Ricardo</p>
+            </article>
+         </section>
+    </main>
+    <footer> <!-- footer = rodapé -->
+         <p>Desenvolvido pelo Joãozito</p>
+    </footer>
+</body>
+</html>
